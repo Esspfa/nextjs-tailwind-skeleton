@@ -1,0 +1,62 @@
+.input {
+  background-color: #303030;
+  border: 0px;
+  height: 48px;
+  font-size: 12px;
+  border-radius: 2px 0px 0px 2px;
+  padding-left: 15px;
+  width: 70%;
+}
+.btn {
+  background-color: #f7849d;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  height: 48px;
+  width: 30%;
+  padding: 0px 10px;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.sideDrawer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: #000;
+  transition: transform 0.3s ease-out;
+  padding-top: 28px;
+  overflow-y: auto;
+}
+
+@media (min-width: 834px) {
+  .sideDrawer {
+    display: none;
+  }
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.close {
+  transform: translateX(-100%);
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.invisible {
+  background-color: rgba(0, 0, 0, 0.1);
+}
